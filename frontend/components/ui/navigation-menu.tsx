@@ -34,7 +34,7 @@ NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
 const NavigationMenuItem = NavigationMenuPrimitive.Item;
 
 const navigationMenuTriggerStyle = cva(
-  "group inline-flex h-9 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors hover:bg-white/10 hover:text-white focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-white/15 data-[state=open]:bg-white/15 text-white/70"
+  "group inline-flex h-9 w-max items-center justify-center rounded-full px-4 py-2 text-sm font-medium transition-colors hover:bg-gray-100 hover:text-[#0055a5] focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-[#0055a5]/10 data-[state=open]:bg-[#0055a5]/10 text-gray-600"
 );
 
 const NavigationMenuTrigger = React.forwardRef<
@@ -79,10 +79,10 @@ const NavigationMenuViewport = React.forwardRef<
   <div className={cn("absolute left-0 top-full flex justify-center")}>
     <NavigationMenuPrimitive.Viewport
       className={cn(
-        "origin-top-center relative mt-2 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-xl border border-white/10 shadow-xl data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",
+        "origin-top-center relative mt-2 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-xl border border-gray-200 shadow-xl data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]",
         className
       )}
-      style={{ background: "rgba(15,17,23,0.95)", backdropFilter: "blur(20px)" }}
+      style={{ background: "rgba(255,255,255,0.98)", backdropFilter: "blur(20px)" }}
       ref={ref}
       {...props}
     />

@@ -52,10 +52,10 @@ export default function HeroSection() {
 
       {/* Bottom fade into TrustBar */}
       <div
-        className="absolute bottom-0 left-0 right-0 h-40 z-10"
+        className="absolute bottom-0 left-0 right-0 h-24 z-10"
         style={{
           background:
-            "linear-gradient(to top, #1e2330 0%, rgba(30,35,48,0.7) 50%, transparent 100%)",
+            "linear-gradient(to top, rgba(0,0,0,0.4) 0%, transparent 100%)",
         }}
         aria-hidden="true"
       />

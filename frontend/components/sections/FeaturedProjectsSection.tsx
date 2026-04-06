@@ -69,7 +69,7 @@ const projects: CardItem[] = [
 
 export default function FeaturedProjectsSection() {
   return (
-    <section className="section-pad bg-[#0f1117]" aria-label="Featured projects">
+    <section className="section-pad bg-white" aria-label="Featured projects">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
@@ -77,7 +77,7 @@ export default function FeaturedProjectsSection() {
             Portfolio
           </p>
           <h2
-            className="text-white mb-4"
+            className="text-[#0f1117] mb-4"
             style={{
               fontFamily: "var(--font-playfair), Georgia, serif",
               fontSize: "clamp(2rem, 4vw, 3rem)",
@@ -87,7 +87,7 @@ export default function FeaturedProjectsSection() {
             Our Work Speaks for Itself
           </h2>
           <div className="divider-brand mx-auto mb-5" />
-          <p className="text-white/55 max-w-xl mx-auto text-base">
+          <p className="text-gray-500 max-w-xl mx-auto text-base">
             A glimpse at recent projects across the GTA — every fence, deck, and
             gate built to last decades.
           </p>

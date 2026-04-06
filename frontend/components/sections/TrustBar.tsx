@@ -38,15 +38,15 @@ function TrustItem({
 }) {
   return (
     <div className="flex items-center gap-3 mx-8 shrink-0">
-      <div className="w-9 h-9 rounded-full bg-[#0055a5]/20 flex items-center justify-center shrink-0">
-        <Icon size={16} className="text-[#0274be]" />
+      <div className="w-9 h-9 rounded-full bg-[#0055a5]/10 flex items-center justify-center shrink-0">
+        <Icon size={16} className="text-[#0055a5]" />
       </div>
       <div className="flex items-baseline gap-1.5">
-        <span className="text-white font-bold text-sm leading-none">{stat}</span>
-        <span className="text-white/45 text-xs leading-none">{label}</span>
+        <span className="text-[#0f1117] font-bold text-sm leading-none">{stat}</span>
+        <span className="text-gray-500 text-xs leading-none">{label}</span>
       </div>
       {/* Dot separator */}
-      <span className="w-1 h-1 rounded-full bg-white/20 ml-4 shrink-0" aria-hidden="true" />
+      <span className="w-1 h-1 rounded-full bg-gray-300 ml-4 shrink-0" aria-hidden="true" />
     </div>
   );
 }
@@ -54,8 +54,8 @@ function TrustItem({
 export default function TrustBar() {
   return (
     <section
-      className="bg-[#1e2330] py-5 overflow-hidden"
-      style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
+      className="bg-[#f8f9fb] py-5 overflow-hidden"
+      style={{ borderTop: "1px solid rgba(0,0,0,0.06)" }}
       aria-label="Trust signals"
     >
       <Marquee duration={35} pauseOnHover fade fadeAmount={8}>

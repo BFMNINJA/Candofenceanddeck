@@ -44,16 +44,16 @@ export default function QuoteSection() {
   };
 
   const inputClass =
-    "w-full bg-white/08 border border-white/15 text-white placeholder-white/35 rounded-lg px-4 py-3 text-sm transition-all duration-200 focus:outline-none focus:border-[#0274be] focus:bg-white/12";
-  const labelClass = "block text-white/70 text-xs font-semibold uppercase tracking-wide mb-1.5";
-  const errorClass = "text-red-400 text-xs mt-1";
+    "w-full bg-white border border-gray-200 text-[#0f1117] placeholder-gray-400 rounded-lg px-4 py-3 text-sm transition-all duration-200 focus:outline-none focus:border-[#0274be] focus:ring-2 focus:ring-[#0274be]/10";
+  const labelClass = "block text-gray-700 text-xs font-semibold uppercase tracking-wide mb-1.5";
+  const errorClass = "text-red-500 text-xs mt-1";
 
   return (
     <section
       id="quote"
-      className="section-pad bg-[#0f1117]"
+      className="section-pad bg-[#f8f9fb]"
       aria-labelledby="quote-heading"
-      style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}
+      style={{ borderTop: "1px solid rgba(0,0,0,0.06)" }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
@@ -63,7 +63,7 @@ export default function QuoteSection() {
           </p>
           <h2
             id="quote-heading"
-            className="text-white mb-4"
+            className="text-[#0f1117] mb-4"
             style={{
               fontFamily: "var(--font-playfair), Georgia, serif",
               fontSize: "clamp(2rem, 4vw, 2.75rem)",
@@ -77,7 +77,7 @@ export default function QuoteSection() {
             className="w-14 h-1 mx-auto mb-5 rounded-full"
             style={{ background: "linear-gradient(90deg, #0055a5, #0274be)" }}
           />
-          <p className="text-white/55 max-w-lg mx-auto" style={{ lineHeight: 1.7 }}>
+          <p className="text-gray-500 max-w-lg mx-auto" style={{ lineHeight: 1.7 }}>
             Fill out the form below and we&apos;ll get back to you within one
             business day. No obligation, no pressure — just an honest quote.
           </p>
@@ -85,20 +85,20 @@ export default function QuoteSection() {
 
         {/* Success state */}
         {submitStatus === "success" ? (
-          <div className="glass-card rounded-2xl p-10 text-center">
-            <CheckCircle size={52} className="text-green-400 mx-auto mb-5" />
+          <div className="bg-white rounded-2xl border border-gray-200 shadow-lg p-10 text-center">
+            <CheckCircle size={52} className="text-green-500 mx-auto mb-5" />
             <h3
-              className="text-white font-bold text-2xl mb-3"
+              className="text-[#0f1117] font-bold text-2xl mb-3"
               style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
             >
               Quote Request Sent!
             </h3>
-            <p className="text-white/65 mb-6">
+            <p className="text-gray-500 mb-6">
               Thanks! We&apos;ll review your request and get back to you within one
               business day. You can also call us directly at{" "}
               <a
                 href="tel:+14166303325"
-                className="text-[#0274be] hover:text-white transition-colors"
+                className="text-[#0274be] hover:text-[#0055a5] transition-colors"
               >
                 (416) 630-3325
               </a>
@@ -106,7 +106,7 @@ export default function QuoteSection() {
             </p>
             <button
               onClick={() => setSubmitStatus("idle")}
-              className="text-[#0274be] text-sm font-semibold hover:text-white transition-colors underline underline-offset-2"
+              className="text-[#0274be] text-sm font-semibold hover:text-[#0055a5] transition-colors underline underline-offset-2"
             >
               Submit another request
             </button>
@@ -114,7 +114,7 @@ export default function QuoteSection() {
         ) : (
           <form
             onSubmit={handleSubmit(onSubmit)}
-            className="glass-card rounded-2xl p-8 md:p-10 space-y-6"
+            className="bg-white rounded-2xl border border-gray-200 shadow-lg p-8 md:p-10 space-y-6"
           >
             {/* Name row */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -231,7 +231,7 @@ export default function QuoteSection() {
 
             {/* Error state */}
             {submitStatus === "error" && (
-              <div className="flex items-center gap-2 text-red-400 text-sm bg-red-400/10 border border-red-400/20 rounded-lg px-4 py-3">
+              <div className="flex items-center gap-2 text-red-600 text-sm bg-red-50 border border-red-200 rounded-lg px-4 py-3">
                 <AlertCircle size={16} />
                 Something went wrong. Please try again or call us at (416) 630-3325.
               </div>
@@ -253,7 +253,7 @@ export default function QuoteSection() {
               </AnimatedButton>
             )}
 
-            <p className="text-white/35 text-xs text-center">
+            <p className="text-gray-400 text-xs text-center">
               We respect your privacy. Your information will never be shared with third parties.
             </p>
           </form>

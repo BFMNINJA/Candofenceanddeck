@@ -64,8 +64,8 @@ function MobileMenu({ open, children, className, ...props }: MobileMenuProps) {
   return createPortal(
     <div
       id="mobile-menu"
-      className="fixed top-16 right-0 bottom-0 left-0 z-40 flex flex-col overflow-hidden border-t border-white/10 md:hidden"
-      style={{ background: 'rgba(15,17,23,0.97)', backdropFilter: 'blur(20px)' }}
+      className="fixed top-[104px] right-0 bottom-0 left-0 z-40 flex flex-col overflow-hidden border-t border-gray-200 md:hidden"
+      style={{ background: 'rgba(255,255,255,0.98)', backdropFilter: 'blur(20px)' }}
     >
       <div
         data-slot={open ? 'open' : 'closed'}
@@ -98,15 +98,15 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        'fixed top-0 left-0 right-0 z-50 w-full border-b border-transparent transition-all duration-300',
-        scrolled && 'glass-nav border-white/08 shadow-lg shadow-black/20',
+        'sticky top-0 left-0 right-0 z-50 w-full border-b border-transparent transition-all duration-300 bg-white',
+        scrolled && 'glass-nav shadow-sm',
       )}
     >
       <nav className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-6 lg:px-8">
 
         {/* Logo */}
         <Link href="/" onClick={() => setOpen(false)} className="flex items-center shrink-0">
-          <div className="bg-white rounded-md px-2.5 py-1 shadow-sm">
+          <div className="rounded-md px-2.5 py-1">
             <Image
               src="/logo.png"
               alt="Can Do Fence & Deck"
@@ -125,7 +125,7 @@ export default function Navbar() {
             href="/"
             className={cn(
               'text-sm px-4 py-1.5 rounded-full font-medium transition-colors duration-200',
-              pathname === '/' ? 'bg-white/15 text-white' : 'text-white/70 hover:text-white hover:bg-white/10',
+              pathname === '/' ? 'bg-[#0055a5]/10 text-[#0055a5]' : 'text-gray-600 hover:text-[#0055a5] hover:bg-gray-100',
             )}
           >
             Home
@@ -136,7 +136,7 @@ export default function Navbar() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <NavigationMenuTrigger
-                  className={cn(isServiceActive && 'bg-white/15 text-white')}
+                  className={cn(isServiceActive && 'bg-[#0055a5]/10 text-[#0055a5]')}
                 >
                   Services
                 </NavigationMenuTrigger>
@@ -149,26 +149,26 @@ export default function Navbar() {
                             href={item.href}
                             className={cn(
                               'flex flex-row gap-3 rounded-lg p-3 transition-colors duration-150',
-                              'hover:bg-white/08',
-                              pathname === item.href ? 'bg-white/10' : '',
+                              'hover:bg-gray-50',
+                              pathname === item.href ? 'bg-[#0055a5]/05' : '',
                             )}
                           >
-                            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#0055a5]/20 shrink-0">
+                            <div className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#0055a5]/10 shrink-0">
                               <item.icon size={20} className="text-[#0274be]" />
                             </div>
                             <div className="flex flex-col justify-center">
-                              <span className="text-sm font-semibold text-white">{item.title}</span>
-                              <span className="text-xs text-white/50 mt-0.5">{item.description}</span>
+                              <span className="text-sm font-semibold text-[#0f1117]">{item.title}</span>
+                              <span className="text-xs text-gray-500 mt-0.5">{item.description}</span>
                             </div>
                           </Link>
                         </NavigationMenuLink>
                       </li>
                     ))}
                   </ul>
-                  <div className="border-t border-white/08 px-3 py-2.5">
-                    <p className="text-white/40 text-xs">
+                  <div className="border-t border-gray-100 px-3 py-2.5">
+                    <p className="text-gray-400 text-xs">
                       Need help choosing?{' '}
-                      <Link href="/contact" className="text-[#0274be] font-medium hover:text-white transition-colors">
+                      <Link href="/contact" className="text-[#0274be] font-medium hover:text-[#0055a5] transition-colors">
                         Talk to us →
                       </Link>
                     </p>
@@ -185,7 +185,7 @@ export default function Navbar() {
               href={link.href}
               className={cn(
                 'text-sm px-4 py-1.5 rounded-full font-medium transition-colors duration-200',
-                pathname === link.href ? 'bg-white/15 text-white' : 'text-white/70 hover:text-white hover:bg-white/10',
+                pathname === link.href ? 'bg-[#0055a5]/10 text-[#0055a5]' : 'text-gray-600 hover:text-[#0055a5] hover:bg-gray-100',
               )}
             >
               {link.label}
@@ -199,7 +199,7 @@ export default function Navbar() {
         {/* Mobile hamburger */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-white p-2 rounded-full hover:bg-white/10 transition-colors duration-200"
+          className="md:hidden text-gray-700 p-2 rounded-full hover:bg-gray-100 transition-colors duration-200"
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label="Toggle menu"
@@ -216,13 +216,13 @@ export default function Navbar() {
             onClick={() => setOpen(false)}
             className={cn(
               'px-4 py-3 rounded-full text-sm font-medium transition-colors duration-200',
-              pathname === '/' ? 'bg-white/15 text-white' : 'text-white/70 hover:text-white hover:bg-white/10',
+              pathname === '/' ? 'bg-[#0055a5]/10 text-[#0055a5]' : 'text-gray-600 hover:text-[#0055a5] hover:bg-gray-50',
             )}
           >
             Home
           </Link>
 
-          <p className="px-4 pt-3 pb-1 text-xs text-white/30 uppercase tracking-widest font-semibold">Services</p>
+          <p className="px-4 pt-3 pb-1 text-xs text-gray-400 uppercase tracking-widest font-semibold">Services</p>
           {serviceLinks.map((link) => (
             <Link
               key={link.href}
@@ -230,15 +230,15 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className={cn(
                 'flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors duration-200',
-                pathname === link.href ? 'bg-white/15 text-white' : 'text-white/70 hover:text-white hover:bg-white/08',
+                pathname === link.href ? 'bg-[#0055a5]/10 text-[#0055a5]' : 'text-gray-600 hover:text-[#0055a5] hover:bg-gray-50',
               )}
             >
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0055a5]/20 shrink-0">
+              <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-[#0055a5]/10 shrink-0">
                 <link.icon size={17} className="text-[#0274be]" />
               </div>
               <div>
-                <div className="text-white text-sm font-medium">{link.title}</div>
-                <div className="text-white/40 text-xs">{link.description}</div>
+                <div className="text-gray-800 text-sm font-medium">{link.title}</div>
+                <div className="text-gray-400 text-xs">{link.description}</div>
               </div>
             </Link>
           ))}
@@ -250,7 +250,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className={cn(
                 'px-4 py-3 rounded-full text-sm font-medium transition-colors duration-200',
-                pathname === link.href ? 'bg-white/15 text-white' : 'text-white/70 hover:text-white hover:bg-white/10',
+                pathname === link.href ? 'bg-[#0055a5]/10 text-[#0055a5]' : 'text-gray-600 hover:text-[#0055a5] hover:bg-gray-50',
               )}
             >
               {link.label}
