@@ -4,6 +4,7 @@ import "./globals.css";
 import TopBar from "@/components/layout/TopBar";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import QuotePopup from "@/components/ui/QuotePopup";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Can Do Fence & Deck",
   },
   description:
-    "Can Do Fence & Deck has been building premium fences, decks, and gates across the Greater Toronto Area since 1998. Industry-leading 5-year written warranty. Fully insured. Free quotes.",
+    "Can Do Fence & Deck has been building premium fences and decks across the Greater Toronto Area since 1998. Industry-leading 5-year written warranty. Fully insured. Free quotes.",
   keywords: [
     "fence contractor Toronto",
     "deck builder GTA",
@@ -32,7 +33,6 @@ export const metadata: Metadata = {
     "wooden fence Toronto",
     "cedar fence GTA",
     "pressure treated fence",
-    "gate installation Toronto",
     "deck contractor Markham",
     "fence company Richmond Hill",
     "Can Do Fence",
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     siteName: "Can Do Fence & Deck",
     title: "Can Do Fence & Deck | GTA's Most Trusted Fence Builder Since 1998",
     description:
-      "Premium fences, decks, and gates across the Greater Toronto Area since 1998. 5-year written warranty. Fully insured. Call (416) 630-3325 for a free quote.",
+      "Premium fences and decks across the Greater Toronto Area since 1998. 5-year written warranty. Fully insured. Call (416) 630-3325 for a free quote.",
     images: [
       {
         url: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Can Do Fence & Deck | GTA's Most Trusted Fence Builder Since 1998",
     description:
-      "Premium fences, decks, and gates across the GTA since 1998. 5-year written warranty. Call (416) 630-3325.",
+      "Premium fences and decks across the GTA since 1998. 5-year written warranty. Call (416) 630-3325.",
     images: [
       "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80",
     ],
@@ -95,6 +95,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}</main>
         <Footer />
+        <QuotePopup />
       </body>
     </html>
   );

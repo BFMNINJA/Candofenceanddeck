@@ -17,7 +17,7 @@ const steps = [
     number: "03",
     title: "Enjoy Your Property",
     description:
-      "Walk around your finished fence, deck, or gate and see craftsmanship you'll be proud of for decades. Backed by our industry-leading 5-year written warranty.",
+      "Walk around your finished fence or deck and see craftsmanship you'll be proud of for decades. Backed by our industry-leading 5-year written warranty.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function ProcessSection() {
             className="text-[#0f1117]/60 max-w-lg mx-auto"
             style={{ fontSize: "1.0625rem", lineHeight: 1.7 }}
           >
-            Getting a new fence, deck, or gate is easier than you think. Here&apos;s
+            Getting a new fence or deck is easier than you think. Here&apos;s
             what to expect when you work with Can Do.
           </p>
         </div>

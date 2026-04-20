@@ -94,7 +94,7 @@ export default function AboutPage() {
             <p>
               We&apos;re a family-oriented business that takes pride in every project —
               whether it&apos;s a single fence panel replacement or a full backyard
-              transformation with a new deck, gate, and perimeter fence. Our crews
+              transformation with a new deck and perimeter fence. Our crews
               bring decades of collective experience to every job site, and we use
               only quality materials that stand up to Canadian weather.
             </p>
@@ -176,7 +176,7 @@ export default function AboutPage() {
           </h2>
           <div className="w-14 h-1 mx-auto mb-6 rounded-full bg-[#0055a5]" />
           <p className="text-white/65 mb-4" style={{ lineHeight: 1.8 }}>
-            Every fence, deck, and gate we build is covered by our{" "}
+            Every fence and deck we build is covered by our{" "}
             <span className="text-white font-semibold">5-year written warranty</span>.
             This covers structural integrity, loose sections, and post stability. Our
             warranty is provided in writing as part of every contract — not just a

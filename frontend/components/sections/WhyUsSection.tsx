@@ -3,13 +3,6 @@
 import { Shield, Clock, FileCheck, Star, Users, Award, CheckCircle } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 
-const stats = [
-  { value: "25+", label: "Years in Business" },
-  { value: "5yr", label: "Written Warranty" },
-  { value: "1,000s", label: "Happy Customers" },
-  { value: "100%", label: "WSIB Insured" },
-];
-
 const reasons = [
   {
     icon: Award,
@@ -23,7 +16,7 @@ const reasons = [
     icon: Clock,
     title: "25+ Years of Proven Experience",
     description:
-      "Since 1998, we've built thousands of fences, decks, and gates across the GTA. Our reputation is built on referrals from happy homeowners.",
+      "Since 1998, we've built thousands of fences and decks across the GTA. Our reputation is built on referrals from happy homeowners.",
     highlight: "Since 1998",
     accent: "from-[#0274be] to-[#5bb3f0]",
   },
@@ -83,26 +76,6 @@ export default function WhyUsSection() {
             We don&apos;t just build fences and decks — we build relationships.
             Here&apos;s what sets us apart from every other contractor in the GTA.
           </p>
-        </div>
-
-        {/* Stats Row */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-          {stats.map((stat) => (
-            <div
-              key={stat.label}
-              className="text-center py-6 px-4 rounded-2xl bg-white border border-[#e8ecf0] hover:border-[#0274be]/40 hover:shadow-lg transition-all duration-300"
-            >
-              <div
-                className="text-4xl font-bold mb-1 text-[#0055a5]"
-                style={{ fontFamily: "var(--font-inter), sans-serif" }}
-              >
-                {stat.value}
-              </div>
-              <div className="text-[#0f1117]/50 text-xs font-semibold uppercase tracking-widest">
-                {stat.label}
-              </div>
-            </div>
-          ))}
         </div>
 
         {/* Cards Grid */}

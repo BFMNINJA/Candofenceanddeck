@@ -1,6 +1,6 @@
 "use client";
 
-import { Fence, Home, DoorOpen, Layers, Trees, Hammer } from "lucide-react";
+import { Fence, Home, Layers, Trees, Hammer } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 import { ExpandingCards, CardItem } from "@/components/ui/expanding-cards";
 
@@ -10,8 +10,7 @@ const projects: CardItem[] = [
     title: "Cedar Privacy Fence",
     description:
       "6ft natural cedar board-on-board privacy fence with post caps. Built to last decades with zero-maintenance finishing.",
-    imgSrc:
-      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+    imgSrc: "/cedar-fence-installation.webp",
     icon: <Fence size={24} />,
     linkHref: "/fences",
   },
@@ -24,16 +23,6 @@ const projects: CardItem[] = [
       "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
     icon: <Home size={24} />,
     linkHref: "/decks",
-  },
-  {
-    id: "wooden-driveway-gate",
-    title: "Wooden Driveway Gate",
-    description:
-      "Double drive cedar gate with steel frame, auto-latch hardware and decorative iron inserts.",
-    imgSrc:
-      "https://images.unsplash.com/photo-1558618047-3c8c76ca0d8d?w=800&q=80",
-    icon: <DoorOpen size={24} />,
-    linkHref: "/gates",
   },
   {
     id: "composite-deck",
@@ -50,8 +39,7 @@ const projects: CardItem[] = [
     title: "Cedar Board Fence",
     description:
       "Horizontal cedar slat fence with steel post system — a modern alternative to the traditional privacy fence.",
-    imgSrc:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+    imgSrc: "/Red-Cedar-fencing-from-canada.webp",
     icon: <Trees size={24} />,
     linkHref: "/fences",
   },
@@ -59,7 +47,7 @@ const projects: CardItem[] = [
     id: "backyard-renovation",
     title: "Full Backyard Build",
     description:
-      "Complete backyard transformation: new fence perimeter, multi-level deck, and walk gate — all in one project.",
+      "Complete backyard transformation: new fence perimeter and multi-level deck — all in one project.",
     imgSrc:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
     icon: <Hammer size={24} />,
@@ -88,8 +76,8 @@ export default function FeaturedProjectsSection() {
           </h2>
           <div className="divider-brand mx-auto mb-5" />
           <p className="text-gray-500 max-w-xl mx-auto text-base">
-            A glimpse at recent projects across the GTA — every fence, deck, and
-            gate built to last decades.
+            A glimpse at recent projects across the GTA — every fence and deck
+            built to last decades.
           </p>
         </div>
 

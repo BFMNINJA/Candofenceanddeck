@@ -76,7 +76,11 @@ export default function FencesPage() {
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filtered.map((fence) => (
-              <ProductCard key={fence.id} product={fence} />
+              <ProductCard
+                key={fence.id}
+                product={fence}
+                detailHref={`/fences/${fence.slug}`}
+              />
             ))}
           </div>
         </div>

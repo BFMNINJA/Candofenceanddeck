@@ -110,7 +110,7 @@ export default function ServiceAreaPage() {
             We Build in Your Neighbourhood
           </h2>
           <p className="text-white/75 mb-8">
-            Ready for a new fence, deck, or gate? Get a free, no-obligation quote
+            Ready for a new fence or deck? Get a free, no-obligation quote
             from your local GTA contractor.
           </p>
           <Link

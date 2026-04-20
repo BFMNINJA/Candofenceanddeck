@@ -206,7 +206,6 @@ export default function QuoteSection() {
                 </option>
                 <option value="Fence">Fence</option>
                 <option value="Deck">Deck</option>
-                <option value="Gate">Gate</option>
                 <option value="Fence & Deck">Fence & Deck</option>
                 <option value="Not Sure">Not Sure Yet</option>
               </select>

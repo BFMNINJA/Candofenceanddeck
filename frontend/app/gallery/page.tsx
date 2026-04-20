@@ -5,13 +5,13 @@ import Image from "next/image";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 
-type Category = "All" | "Fences" | "Decks" | "Gates";
+type Category = "All" | "Fences" | "Decks";
 
 const allPhotos: { src: string; alt: string; category: Exclude<Category, "All"> }[] = [
   // Fences
   { src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80", alt: "Cedar privacy fence — board-on-board style", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", alt: "Brown pressure treated fence with lattice top", category: "Fences" },
-  { src: "https://images.unsplash.com/photo-1558618047-3c8c76ca0d8d?w=800&q=80", alt: "Scallop top cedar fence", category: "Fences" },
+  { src: "/970e5c066c5147f1d61325a2c62a35af97828afc.webp", alt: "Scallop top cedar fence", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80", alt: "Traditional style pressure treated fence", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80", alt: "I-Beam heavy duty privacy fence", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=800&q=80", alt: "Cedar fence — natural finish", category: "Fences" },
@@ -22,16 +22,9 @@ const allPhotos: { src: string; alt: string; category: Exclude<Category, "All"> 
   { src: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80", alt: "Large pressure treated upper deck with walkout", category: "Decks" },
   { src: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80", alt: "Deck with built-in privacy screen", category: "Decks" },
   { src: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800&q=80", alt: "Trex deck with cedar trim railing", category: "Decks" },
-  // Gates
-  { src: "https://images.unsplash.com/photo-1599423300746-b62533397364?w=800&q=80", alt: "Matching cedar gate — board-on-board style", category: "Gates" },
-  { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", alt: "Iron insert decorative gate", category: "Gates" },
-  { src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80", alt: "Double gate with post caps", category: "Gates" },
-  { src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80", alt: "Privacy gate with lattice insert", category: "Gates" },
-  { src: "https://images.unsplash.com/photo-1558618047-3c8c76ca0d8d?w=800&q=80", alt: "Simple matching pressure treated gate", category: "Gates" },
-  { src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80", alt: "Heavy duty gate — I-beam style", category: "Gates" },
 ];
 
-const categories: Category[] = ["All", "Fences", "Decks", "Gates"];
+const categories: Category[] = ["All", "Fences", "Decks"];
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState<Category>("All");
@@ -69,7 +62,7 @@ export default function GalleryPage() {
             Project Gallery
           </h1>
           <p className="text-white/65 max-w-xl mx-auto" style={{ lineHeight: 1.7 }}>
-            Browse completed fence, deck, and gate projects across the Greater
+            Browse completed fence and deck projects across the Greater
             Toronto Area. Click any photo to view full size.
           </p>
         </div>

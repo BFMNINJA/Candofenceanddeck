@@ -3,10 +3,10 @@ import { NextRequest } from "next/server";
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { firstName, lastName, phone, email, serviceType, message } = body;
+    const { firstName, lastName, phone, email, serviceType, message, source } = body;
 
-    // Validate required fields
-    if (!firstName || !lastName || !phone || !email || !serviceType) {
+    // Validate required fields (email optional for popup submissions)
+    if (!firstName || !lastName || !phone || !serviceType) {
       return Response.json(
         { success: false, error: "Missing required fields" },
         { status: 400 }
@@ -15,9 +15,10 @@ export async function POST(request: NextRequest) {
 
     // Log the submission (Resend/email integration added when API key is configured)
     console.log("Quote request received:", {
+      source: source || "main-form",
       name: `${firstName} ${lastName}`,
       phone,
-      email,
+      email: email || "(not provided)",
       serviceType,
       message: message || "(no message)",
       timestamp: new Date().toISOString(),

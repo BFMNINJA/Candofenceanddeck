@@ -28,23 +28,12 @@ const services = [
     highlights: ["Composite Trex & Cedar", "Custom Railings & Stairs", "Multi-Level Builds"],
   },
   {
-    id: "gates",
-    title: "Gates",
-    href: "/gates",
-    description:
-      "From elegant walk gates to heavy-duty double drive driveway gates, we design and install gates that combine security with curb appeal. Iron inserts, auto-latch hardware, and custom sizing available.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1558618047-3c8c76ca0d8d?w=800&q=80",
-    highlights: ["Walk & Double Drive", "Iron Insert Designs", "Auto-Latch Hardware"],
-  },
-  {
     id: "cedar-work",
     title: "Cedar Work",
     href: "/fences",
     description:
-      "Specialty cedar projects including pergolas, arbours, and custom garden structures. Natural western red cedar brings warmth and character to any outdoor space, with natural resistance to rot and insects.",
-    imageUrl:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
+      "Specialty cedar projects including pergolas, arbours, shingles, and custom garden structures. Natural western red cedar brings warmth and character to any outdoor space, with natural resistance to rot and insects.",
+    imageUrl: "/shape-and-texture-of-a-new-cedar-shingle-roof.webp",
     highlights: ["Pergolas & Arbours", "Natural Rot Resistance", "Custom Designs"],
   },
   {
@@ -52,7 +41,7 @@ const services = [
     title: "Repairs & Replacements",
     href: "/contact",
     description:
-      "Storm damage, rotting posts, or just time taking its toll? We repair and replace fences, decks, and gates of all types. Fast turnaround with the same quality materials and warranty as our new builds.",
+      "Storm damage, rotting posts, or just time taking its toll? We repair and replace fences and decks of all types. Fast turnaround with the same quality materials and warranty as our new builds.",
     imageUrl:
       "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
     highlights: ["Storm Damage Repair", "Post Replacement", "Full Rebuilds"],
@@ -85,7 +74,7 @@ export default function ServicesSection() {
           </h2>
           <div className="divider-brand mx-auto mb-5" />
           <p className="text-gray-500 max-w-xl mx-auto text-base">
-            Quality fencing, decking, and gate installation across the Greater
+            Quality fencing and decking across the Greater
             Toronto Area — backed by a 5-year written warranty.
           </p>
         </div>

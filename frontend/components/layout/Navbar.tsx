@@ -5,7 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { createPortal } from 'react-dom';
-import { Fence, Layers, DoorOpen } from 'lucide-react';
+import { Fence, Layers } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { MenuToggleIcon } from '@/components/ui/menu-toggle-icon';
 import {
@@ -29,12 +29,6 @@ const serviceLinks = [
     href: '/decks',
     icon: Layers,
     description: 'PT, composite Trex & cedar deck builds',
-  },
-  {
-    title: 'Gates',
-    href: '/gates',
-    icon: DoorOpen,
-    description: 'Walk gates, double drive & iron insert designs',
   },
 ];
 

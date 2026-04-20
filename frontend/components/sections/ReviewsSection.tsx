@@ -38,7 +38,7 @@ const testimonials = [
     role: "Brampton, ON",
     image: "https://randomuser.me/api/portraits/men/76.jpg",
     rating: 5,
-    text: "Had Can Do install a double drive cedar gate with iron inserts. Looks absolutely stunning. The team was knowledgeable, worked fast, and cleaned up everything after. Neighbors keep asking who did it!",
+    text: "Had Can Do install a cedar board-on-board privacy fence along our entire backyard. Looks absolutely stunning. The team was knowledgeable, worked fast, and cleaned up everything after. Neighbors keep asking who did it!",
   },
   {
     name: "Lisa & Rob F.",

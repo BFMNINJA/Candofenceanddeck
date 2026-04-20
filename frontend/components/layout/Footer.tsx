@@ -20,7 +20,6 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
 const quickLinks = [
   { href: "/fences", label: "Fence Styles" },
   { href: "/decks", label: "Deck Styles" },
-  { href: "/gates", label: "Gate Styles" },
   { href: "/gallery", label: "Project Gallery" },
   { href: "/about", label: "About Us" },
   { href: "/service-area", label: "Service Area" },
@@ -53,10 +52,9 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-5">
-              GTA's most trusted fence and deck builder since 1998. Proudly
-              serving homeowners across the Greater Toronto Area with
-              quality craftsmanship and the industry's best written
-              warranty.
+              GTA&apos;s most trusted fence and deck builder since 1998. Proudly
+              serving homeowners across the Greater Toronto Area with quality
+              craftsmanship and the industry&apos;s best written warranty.
             </p>
             <div className="flex items-start gap-2.5 text-sm text-white/60 mb-5">
               <MapPin

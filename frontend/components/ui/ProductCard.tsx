@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
@@ -13,9 +11,20 @@ type Product = {
   imageUrl: string;
 };
 
-export default function ProductCard({ product }: { product: Product }) {
+export default function ProductCard({
+  product,
+  detailHref,
+}: {
+  product: Product;
+  detailHref?: string;
+}) {
+  const href = detailHref ?? "/#quote";
+
   return (
-    <div className="group bg-white rounded-2xl overflow-hidden border border-[#f0f2f5] hover:border-[#0055a5]/30 hover:shadow-2xl transition-all duration-300 hover-lift flex flex-col">
+    <Link
+      href={href}
+      className="group bg-white rounded-2xl overflow-hidden border border-[#f0f2f5] hover:border-[#0055a5]/30 hover:shadow-2xl transition-all duration-300 hover-lift flex flex-col"
+    >
       {/* Image */}
       <div className="relative aspect-[4/3] overflow-hidden bg-[#f8f9fb]">
         <Image
@@ -48,17 +57,14 @@ export default function ProductCard({ product }: { product: Product }) {
         <p className="text-[#0f1117]/60 text-sm leading-relaxed mb-5 flex-1">
           {product.description}
         </p>
-        <Link
-          href="/#quote"
-          className="inline-flex items-center gap-1.5 text-[#0055a5] hover:text-[#0274be] text-sm font-semibold transition-colors duration-200 group/link mt-auto"
-        >
-          Get a Quote
+        <span className="inline-flex items-center gap-1.5 text-[#0055a5] group-hover:text-[#0274be] text-sm font-semibold transition-colors duration-200 mt-auto">
+          {detailHref ? "View Details" : "Get a Quote"}
           <ArrowRight
             size={15}
-            className="group-hover/link:translate-x-1 transition-transform duration-200"
+            className="group-hover:translate-x-1 transition-transform duration-200"
           />
-        </Link>
+        </span>
       </div>
-    </div>
+    </Link>
   );
 }
