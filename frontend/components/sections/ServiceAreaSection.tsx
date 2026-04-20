@@ -53,7 +53,7 @@ export default function ServiceAreaSection() {
           className="mb-10"
         >
           <Image
-            src="/service-area-map.png"
+            src="/map-gta.png"
             alt="Can Do Fence & Deck Service Area — Greater Toronto Area"
             width={1600}
             height={1200}
