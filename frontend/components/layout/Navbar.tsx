@@ -102,7 +102,7 @@ export default function Navbar() {
         <Link href="/" onClick={() => setOpen(false)} className="flex items-center shrink-0">
           <div className="rounded-md px-2.5 py-1">
             <Image
-              src="/Logo.png"
+              src="/logo.png"
               alt="Can Do Fence & Deck"
               width={110}
               height={40}
