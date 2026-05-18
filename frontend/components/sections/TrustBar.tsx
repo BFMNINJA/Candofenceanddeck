@@ -23,7 +23,7 @@ const trustItems = [
   { icon: Clock, stat: "Same Week", label: "Response Guaranteed" },
   { icon: FileCheck, stat: "Written", label: "Property Line Guarantee" },
   { icon: ThumbsUp, stat: "Top Rated", label: "On Google Reviews" },
-  { icon: Hammer, stat: "Cedar & PT", label: "Premium Materials Used" },
+  { icon: Hammer, stat: "Premium PT", label: "Quality Materials Used" },
   { icon: MapPin, stat: "33 Cities", label: "Across the GTA" },
 ];
 

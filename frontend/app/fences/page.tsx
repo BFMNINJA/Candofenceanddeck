@@ -1,20 +1,9 @@
-"use client";
-
-import { useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import ProductCard from "@/components/ui/ProductCard";
 import fences from "@/data/fences";
 
-const filters = ["All", "Pressure Treated", "Cedar"];
-
 export default function FencesPage() {
-  const [active, setActive] = useState("All");
-
-  const filtered =
-    active === "All"
-      ? fences
-      : fences.filter((f) => f.material === active);
 
   return (
     <>
@@ -42,8 +31,8 @@ export default function FencesPage() {
             Fence Styles
           </h1>
           <p className="text-white/65 max-w-xl mx-auto" style={{ lineHeight: 1.7 }}>
-            From classic board-on-board to heavy-duty I-beam — browse our full
-            range of pressure treated and cedar fence styles.
+            From classic board-on-board to heavy-duty I-beam - browse our full
+            range of premium pressure-treated fence styles.
           </p>
         </div>
       </section>
@@ -51,31 +40,9 @@ export default function FencesPage() {
       {/* Filter + Grid */}
       <section className="section-pad bg-[#f8f9fb]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Filter Tabs */}
-          <div className="flex flex-wrap gap-3 mb-10 justify-center">
-            {filters.map((f) => (
-              <button
-                key={f}
-                onClick={() => setActive(f)}
-                className={`px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-200 ${
-                  active === f
-                    ? "bg-[#0055a5] text-white shadow-lg"
-                    : "bg-white text-[#0f1117]/70 border border-[#e8eaed] hover:border-[#0055a5]/40 hover:text-[#0055a5]"
-                }`}
-              >
-                {f}
-                {f !== "All" && (
-                  <span className="ml-1.5 text-xs opacity-60">
-                    ({fences.filter((x) => x.material === f).length})
-                  </span>
-                )}
-              </button>
-            ))}
-          </div>
-
           {/* Grid */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filtered.map((fence) => (
+            {fences.map((fence) => (
               <ProductCard
                 key={fence.id}
                 product={fence}
@@ -106,7 +73,7 @@ export default function FencesPage() {
             property and budget.
           </p>
           <Link
-            href="/#quote"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-white text-[#0055a5] hover:bg-[#f0f4ff] font-bold px-8 py-4 rounded-md transition-all duration-300 group shadow-lg"
           >
             Get a Free Quote

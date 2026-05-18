@@ -11,7 +11,7 @@ router.post("/", async (req: Request, res: Response) => {
     return;
   }
 
-  const toEmail = process.env.TO_EMAIL || "alon@candofence.com";
+  const toEmail = process.env.TO_EMAIL || "sales@candofence.com";
   const fromEmail = process.env.FROM_EMAIL || "quotes@candofenceanddeck.com";
 
   console.log(`\n--- New Quote Request ---`);

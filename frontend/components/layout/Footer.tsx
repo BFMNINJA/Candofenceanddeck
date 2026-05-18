@@ -24,7 +24,6 @@ const quickLinks = [
   { href: "/about", label: "About Us" },
   { href: "/service-area", label: "Service Area" },
   { href: "/contact", label: "Contact Us" },
-  { href: "/#quote", label: "Get a Free Quote" },
 ];
 
 export default function Footer() {
@@ -125,7 +124,7 @@ export default function Footer() {
                     size={15}
                     className="text-[#0274be] shrink-0 group-hover:scale-110 transition-transform"
                   />
-                  (416) 630-3325 — Toronto
+                  (416) 630-3325 - Toronto
                 </a>
               </li>
               <li>
@@ -137,31 +136,19 @@ export default function Footer() {
                     size={15}
                     className="text-[#0274be] shrink-0 group-hover:scale-110 transition-transform"
                   />
-                  (905) 642-3325 — GTA
+                  (905) 642-3325 - GTA
                 </a>
               </li>
               <li>
                 <a
-                  href="tel:+18336303325"
-                  className="flex items-center gap-2.5 text-sm text-white/60 hover:text-[#0274be] transition-colors duration-200 group"
-                >
-                  <Phone
-                    size={15}
-                    className="text-[#0274be] shrink-0 group-hover:scale-110 transition-transform"
-                  />
-                  (833) 630-3325 — Toll Free
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:alon@candofence.com"
+                  href="mailto:sales@candofence.com"
                   className="flex items-center gap-2.5 text-sm text-white/60 hover:text-[#0274be] transition-colors duration-200 group"
                 >
                   <Mail
                     size={15}
                     className="text-[#0274be] shrink-0 group-hover:scale-110 transition-transform"
                   />
-                  alon@candofence.com
+                  sales@candofence.com
                 </a>
               </li>
             </ul>

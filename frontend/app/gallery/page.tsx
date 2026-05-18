@@ -9,19 +9,16 @@ type Category = "All" | "Fences" | "Decks";
 
 const allPhotos: { src: string; alt: string; category: Exclude<Category, "All"> }[] = [
   // Fences
-  { src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80", alt: "Cedar privacy fence — board-on-board style", category: "Fences" },
+  { src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80", alt: "Pressure treated privacy fence - board-on-board style", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80", alt: "Brown pressure treated fence with lattice top", category: "Fences" },
-  { src: "/970e5c066c5147f1d61325a2c62a35af97828afc.webp", alt: "Scallop top cedar fence", category: "Fences" },
+  { src: "/970e5c066c5147f1d61325a2c62a35af97828afc.webp", alt: "Scallop top pressure treated fence", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80", alt: "Traditional style pressure treated fence", category: "Fences" },
   { src: "https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800&q=80", alt: "I-Beam heavy duty privacy fence", category: "Fences" },
-  { src: "https://images.unsplash.com/photo-1592595896551-12b371d546d5?w=800&q=80", alt: "Cedar fence — natural finish", category: "Fences" },
   // Decks
   { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", alt: "Pressure treated deck with black railing", category: "Decks" },
-  { src: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?w=800&q=80", alt: "Trex composite deck — two tone design", category: "Decks" },
-  { src: "https://images.unsplash.com/photo-1558603668-6570496b66f8?w=800&q=80", alt: "Cedar deck with privacy shutters", category: "Decks" },
+  { src: "https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee?w=800&q=80", alt: "Trex composite deck - two tone design", category: "Decks" },
   { src: "https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=800&q=80", alt: "Large pressure treated upper deck with walkout", category: "Decks" },
   { src: "https://images.unsplash.com/photo-1523217582562-09d0def993a6?w=800&q=80", alt: "Deck with built-in privacy screen", category: "Decks" },
-  { src: "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?w=800&q=80", alt: "Trex deck with cedar trim railing", category: "Decks" },
 ];
 
 const categories: Category[] = ["All", "Fences", "Decks"];

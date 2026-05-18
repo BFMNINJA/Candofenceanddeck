@@ -1,16 +1,17 @@
 "use client";
 
-import { Fence, Home, Layers, Trees, Hammer } from "lucide-react";
+import { Fence, Home, Layers, Hammer } from "lucide-react";
 import { AnimatedButton } from "@/components/ui/animated-button";
 import { ExpandingCards, CardItem } from "@/components/ui/expanding-cards";
 
 const projects: CardItem[] = [
   {
-    id: "cedar-privacy-fence",
-    title: "Cedar Privacy Fence",
+    id: "pt-privacy-fence",
+    title: "Pressure Treated Privacy Fence",
     description:
-      "6ft natural cedar board-on-board privacy fence with post caps. Built to last decades with zero-maintenance finishing.",
-    imgSrc: "/cedar-fence-installation.webp",
+      "6ft pressure-treated board-on-board privacy fence with decorative post caps. Built to last decades, backed by our 5-year written warranty.",
+    imgSrc:
+      "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
     icon: <Fence size={24} />,
     linkHref: "/fences",
   },
@@ -35,19 +36,10 @@ const projects: CardItem[] = [
     linkHref: "/decks",
   },
   {
-    id: "cedar-board-fence",
-    title: "Cedar Board Fence",
-    description:
-      "Horizontal cedar slat fence with steel post system — a modern alternative to the traditional privacy fence.",
-    imgSrc: "/Red-Cedar-fencing-from-canada.webp",
-    icon: <Trees size={24} />,
-    linkHref: "/fences",
-  },
-  {
     id: "backyard-renovation",
     title: "Full Backyard Build",
     description:
-      "Complete backyard transformation: new fence perimeter and multi-level deck — all in one project.",
+      "Complete backyard transformation: new fence perimeter and multi-level deck - all in one project.",
     imgSrc:
       "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
     icon: <Hammer size={24} />,
@@ -76,7 +68,7 @@ export default function FeaturedProjectsSection() {
           </h2>
           <div className="divider-brand mx-auto mb-5" />
           <p className="text-gray-500 max-w-xl mx-auto text-base">
-            A glimpse at recent projects across the GTA — every fence and deck
+            A glimpse at recent projects across the GTA - every fence and deck
             built to last decades.
           </p>
         </div>

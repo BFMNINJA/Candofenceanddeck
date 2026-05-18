@@ -22,13 +22,13 @@ const serviceLinks = [
     title: 'Fences',
     href: '/fences',
     icon: Fence,
-    description: 'Cedar, pressure-treated & custom privacy fences',
+    description: 'Pressure-treated & custom privacy fences',
   },
   {
     title: 'Decks',
     href: '/decks',
     icon: Layers,
-    description: 'PT, composite Trex & cedar deck builds',
+    description: 'Pressure-treated & composite Trex deck builds',
   },
 ];
 
@@ -125,7 +125,7 @@ export default function Navbar() {
             Home
           </Link>
 
-          {/* Services — NavigationMenu dropdown */}
+          {/* Services - NavigationMenu dropdown */}
           <NavigationMenu>
             <NavigationMenuList>
               <NavigationMenuItem>

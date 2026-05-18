@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import ProductCard from "@/components/ui/ProductCard";
 import decks from "@/data/decks";
 
-const filters = ["All", "Pressure Treated", "Composite", "Cedar"];
+const filters = ["All", "Pressure Treated", "Composite"];
 
 export default function DecksPage() {
   const [active, setActive] = useState("All");
@@ -42,7 +42,7 @@ export default function DecksPage() {
             Deck Styles
           </h1>
           <p className="text-white/65 max-w-xl mx-auto" style={{ lineHeight: 1.7 }}>
-            From budget-friendly pressure treated to premium Trex composite — find
+            From budget-friendly pressure treated to premium Trex composite - find
             the perfect deck for your backyard and lifestyle.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function DecksPage() {
             space. Contact us today for a free, no-obligation estimate.
           </p>
           <Link
-            href="/#quote"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-white text-[#0055a5] hover:bg-[#f0f4ff] font-bold px-8 py-4 rounded-md transition-all duration-300 group shadow-lg"
           >
             Get a Free Quote

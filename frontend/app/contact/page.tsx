@@ -22,16 +22,10 @@ const contactDetails = [
     href: "tel:+19056423325",
   },
   {
-    icon: Phone,
-    label: "Toll Free",
-    value: "(833) 630-3325",
-    href: "tel:+18336303325",
-  },
-  {
     icon: Mail,
     label: "Email",
-    value: "alon@candofence.com",
-    href: "mailto:alon@candofence.com",
+    value: "sales@candofence.com",
+    href: "mailto:sales@candofence.com",
   },
   {
     icon: MapPin,

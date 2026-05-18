@@ -5,7 +5,7 @@ const steps = [
     number: "01",
     title: "Request a Free Quote",
     description:
-      "Fill out our quick online form or give us a call. We'll get back to you promptly to discuss your project, timeline, and budget — no pressure, no obligation.",
+      "Fill out our quick online form or give us a call. We'll get back to you promptly to discuss your project, timeline, and budget - no pressure, no obligation.",
   },
   {
     number: "02",
@@ -103,7 +103,7 @@ export default function ProcessSection() {
 
         {/* CTA */}
         <div className="text-center mt-14">
-          <AnimatedButton href="/#quote" variant="primary">
+          <AnimatedButton href="/contact" variant="primary">
             Start Your Project Today
           </AnimatedButton>
         </div>

@@ -6,7 +6,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Service Area",
   description:
-    "Can Do Fence & Deck serves the entire Greater Toronto Area — Toronto, Vaughan, Markham, Mississauga, Brampton, and 25+ more municipalities.",
+    "Can Do Fence & Deck serves the entire Greater Toronto Area - Toronto, Vaughan, Markham, Mississauga, Brampton, and 25+ more municipalities.",
 };
 
 export default function ServiceAreaPage() {
@@ -36,7 +36,7 @@ export default function ServiceAreaPage() {
           </h1>
           <p className="text-white/65 max-w-xl mx-auto" style={{ lineHeight: 1.7 }}>
             We proudly serve homeowners across the Greater Toronto Area and
-            surrounding regions — from Burlington to Barrie.
+            surrounding regions - from Burlington to Barrie.
           </p>
         </div>
       </section>
@@ -75,7 +75,7 @@ export default function ServiceAreaPage() {
             <div className="divider-brand mx-auto mb-5" />
             <p className="text-[#0f1117]/60 max-w-lg mx-auto">
               Our crews cover the entire GTA and surrounding areas. If you don&apos;t see
-              your city below, give us a call — we may still service your area.
+              your city below, give us a call - we may still service your area.
             </p>
           </div>
 
@@ -92,7 +92,7 @@ export default function ServiceAreaPage() {
           </div>
 
           <p className="text-center text-[#0f1117]/40 text-sm mt-8 italic">
-            Not seeing your city? Call us at (416) 630-3325 — we may still cover your area.
+            Not seeing your city? Call us at (416) 630-3325 - we may still cover your area.
           </p>
         </div>
       </section>
@@ -114,7 +114,7 @@ export default function ServiceAreaPage() {
             from your local GTA contractor.
           </p>
           <Link
-            href="/#quote"
+            href="/contact"
             className="inline-flex items-center gap-2 bg-white text-[#0055a5] hover:bg-[#f0f4ff] font-bold px-8 py-4 rounded-md transition-all duration-300 group shadow-lg"
           >
             Get a Free Quote

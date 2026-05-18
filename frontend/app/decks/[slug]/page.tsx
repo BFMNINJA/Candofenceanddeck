@@ -20,7 +20,7 @@ export async function generateMetadata({
   const deck = decks.find((d) => d.slug === slug);
   if (!deck) return { title: "Deck Style Not Found" };
   return {
-    title: `${deck.name} — ${deck.material} Deck`,
+    title: `${deck.name} - ${deck.material} Deck`,
     description: deck.description,
   };
 }
@@ -137,7 +137,7 @@ export default async function DeckDetailPage({
 
               {/* CTAs */}
               <div className="flex flex-wrap gap-3">
-                <AnimatedButton href="/#quote" variant="primary">
+                <AnimatedButton href="/contact" variant="primary">
                   Get a Free Quote
                 </AnimatedButton>
                 <Link

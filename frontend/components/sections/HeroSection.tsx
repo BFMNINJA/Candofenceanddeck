@@ -40,7 +40,7 @@ export default function HeroSection() {
         aria-hidden="true"
       />
 
-      {/* Dark overlay — heavier at bottom-left to ensure text legibility */}
+      {/* Dark overlay - heavier at bottom-left to ensure text legibility */}
       <div
         className="absolute inset-0"
         style={{
@@ -76,7 +76,7 @@ export default function HeroSection() {
           Serving the GTA Since 1998
         </motion.div>
 
-        {/* Headline — mixed weights like the demo */}
+        {/* Headline - mixed weights like the demo */}
         <motion.h1
           custom={0.2}
           variants={fadeUp}
@@ -132,7 +132,7 @@ export default function HeroSection() {
           >
             (416) 630-3325
           </FlowHoverButton>
-          <AnimatedButton href="/#quote" variant="primary" className="h-11 text-sm">
+          <AnimatedButton href="/contact" variant="primary" className="h-11 text-sm">
             Get a Free Quote
           </AnimatedButton>
         </motion.div>
@@ -177,7 +177,7 @@ export default function HeroSection() {
         </motion.svg>
       </motion.div>
 
-      {/* Trust strip — top of bottom fade */}
+      {/* Trust strip - top of bottom fade */}
       <motion.div
         custom={0.65}
         initial="hidden"

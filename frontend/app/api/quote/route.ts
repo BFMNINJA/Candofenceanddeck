@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         signal: AbortSignal.timeout(5000),
       });
     } catch {
-      // Backend not running — log only, still return success to user
+      // Backend not running - log only, still return success to user
     }
 
     return Response.json({ success: true });

@@ -149,7 +149,7 @@ export default function QuotePopup() {
     try {
       localStorage.setItem(STORAGE_KEY_DISMISSED, String(Date.now()));
     } catch {
-      // Storage unavailable — ignore
+      // Storage unavailable - ignore
     }
   };
 
@@ -246,7 +246,7 @@ export default function QuotePopup() {
                   className="text-[#0f1117] text-2xl font-bold mb-2"
                   style={{ fontFamily: "var(--font-playfair), Georgia, serif" }}
                 >
-                  Thanks — We&apos;ll Be In Touch
+                  Thanks - We&apos;ll Be In Touch
                 </h2>
                 <p className="text-gray-500 text-sm leading-relaxed mb-6">
                   We&apos;ve received your request and will call you back within
@@ -281,7 +281,7 @@ export default function QuotePopup() {
                     Get a Free Quote
                   </h2>
                   <p className="text-white/80 text-sm leading-relaxed">
-                    Fill in 3 quick details — we&apos;ll call you back within
+                    Fill in 3 quick details - we&apos;ll call you back within
                     one business day.
                   </p>
                 </div>

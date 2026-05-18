@@ -79,7 +79,7 @@ export default function QuoteSection() {
           />
           <p className="text-gray-500 max-w-lg mx-auto" style={{ lineHeight: 1.7 }}>
             Fill out the form below and we&apos;ll get back to you within one
-            business day. No obligation, no pressure — just an honest quote.
+            business day. No obligation, no pressure - just an honest quote.
           </p>
         </div>
 
@@ -222,7 +222,7 @@ export default function QuoteSection() {
               <textarea
                 id="message"
                 rows={4}
-                placeholder="Tell us about your project — size, style preferences, timeline, anything helpful..."
+                placeholder="Tell us about your project - size, style preferences, timeline, anything helpful..."
                 className={`${inputClass} resize-none`}
                 {...register("message")}
               />

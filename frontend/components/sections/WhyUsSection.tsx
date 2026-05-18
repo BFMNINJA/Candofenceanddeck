@@ -1,14 +1,13 @@
 "use client";
 
-import { Shield, Clock, FileCheck, Star, Users, Award, CheckCircle } from "lucide-react";
-import { AnimatedButton } from "@/components/ui/animated-button";
+import { Shield, Clock, FileCheck, Award, CheckCircle } from "lucide-react";
 
 const reasons = [
   {
     icon: Award,
     title: "Best Warranty in the Business",
     description:
-      "We back every project with a 5-year written warranty — the longest in the industry. Structural integrity, loose sections, and post stability all covered in writing.",
+      "We back every project with a 5-year written warranty - the longest in the industry. Structural integrity, loose sections, and post stability all covered in writing.",
     highlight: "5-Year Written Warranty",
     accent: "from-[#0055a5] to-[#0274be]",
   },
@@ -32,7 +31,7 @@ const reasons = [
     icon: FileCheck,
     title: "Written Property Line Guarantee",
     description:
-      "We provide a written guarantee on property line accuracy — something most residential contractors won't do. Your fence will be built exactly where it should be.",
+      "We provide a written guarantee on property line accuracy - something most residential contractors won't do. Your fence will be built exactly where it should be.",
     highlight: "Rare in the Industry",
     accent: "from-[#0274be] to-[#5bb3f0]",
   },
@@ -73,7 +72,7 @@ export default function WhyUsSection() {
           </h2>
           <div className="divider-brand mx-auto mb-5" />
           <p className="text-[#0f1117]/55 max-w-xl mx-auto" style={{ fontSize: "1.0625rem", lineHeight: 1.7 }}>
-            We don&apos;t just build fences and decks — we build relationships.
+            We don&apos;t just build fences and decks - we build relationships.
             Here&apos;s what sets us apart from every other contractor in the GTA.
           </p>
         </div>
@@ -123,28 +122,6 @@ export default function WhyUsSection() {
           })}
         </div>
 
-        {/* Bottom CTA strip */}
-        <div className="mt-14 flex flex-col sm:flex-row items-center justify-between gap-6 p-7 rounded-2xl border border-[#0055a5]/20 bg-[#0055a5]/05">
-          <div className="flex items-center gap-4">
-            <div className="flex -space-x-2">
-              {[Star, Users, Award].map((Icon, i) => (
-                <div
-                  key={i}
-                  className="w-9 h-9 rounded-full bg-[#0055a5] border-2 border-white flex items-center justify-center"
-                >
-                  <Icon size={14} className="text-white" />
-                </div>
-              ))}
-            </div>
-            <div>
-              <p className="text-[#0f1117] font-semibold text-sm">Trusted by thousands of GTA homeowners</p>
-              <p className="text-[#0f1117]/45 text-xs">Scarborough · Mississauga · Brampton · Markham & more</p>
-            </div>
-          </div>
-          <AnimatedButton href="/#quote" variant="primary">
-            Get a Free Quote
-          </AnimatedButton>
-        </div>
       </div>
     </section>
   );

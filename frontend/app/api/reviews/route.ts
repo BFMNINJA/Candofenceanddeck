@@ -1,4 +1,4 @@
-// Hardcoded fallback reviews — replace with Google Places API when key is available
+// Hardcoded fallback reviews - replace with Google Places API when key is available
 const fallbackReviews = [
   {
     author_name: "Michael T.",
@@ -11,7 +11,7 @@ const fallbackReviews = [
     author_name: "Sandra K.",
     author_url: "",
     rating: 5,
-    text: "We had both a fence and a deck done by Can Do this summer and couldn't be happier. The deck turned out beautifully — cedar with a black picket rail, exactly what we wanted. The 5-year warranty gave us real peace of mind.",
+    text: "We had both a fence and a deck done by Can Do this summer and couldn't be happier. The deck turned out beautifully - pressure-treated with a black picket rail, exactly what we wanted. The 5-year warranty gave us real peace of mind.",
     relative_time_description: "5 months ago",
   },
   {
@@ -25,13 +25,13 @@ const fallbackReviews = [
     author_name: "Priya N.",
     author_url: "",
     rating: 5,
-    text: "Second time using Can Do — first for a fence, now for a pressure treated deck. Both experiences were seamless. They show up when they say they will and the quality is consistent. These guys are the real deal.",
+    text: "Second time using Can Do - first for a fence, now for a pressure treated deck. Both experiences were seamless. They show up when they say they will and the quality is consistent. These guys are the real deal.",
     relative_time_description: "2 months ago",
   },
 ];
 
 export async function GET() {
-  // Google Places API integration — uncomment and configure when API key is available
+  // Google Places API integration - uncomment and configure when API key is available
   /*
   const apiKey = process.env.GOOGLE_PLACES_API_KEY;
   const placeId = process.env.GOOGLE_PLACE_ID;

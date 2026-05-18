@@ -20,7 +20,7 @@ export async function generateMetadata({
   const fence = fences.find((f) => f.slug === slug);
   if (!fence) return { title: "Fence Style Not Found" };
   return {
-    title: `${fence.name} — ${fence.material} Fence`,
+    title: `${fence.name} - ${fence.material} Fence`,
     description: fence.description,
   };
 }
@@ -130,7 +130,7 @@ export default async function FenceDetailPage({
 
               {/* CTAs */}
               <div className="flex flex-wrap gap-3">
-                <AnimatedButton href="/#quote" variant="primary">
+                <AnimatedButton href="/contact" variant="primary">
                   Get a Free Quote
                 </AnimatedButton>
                 <Link

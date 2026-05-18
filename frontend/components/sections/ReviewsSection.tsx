@@ -17,7 +17,7 @@ const testimonials = [
     role: "Richmond Hill, ON",
     image: "https://randomuser.me/api/portraits/women/44.jpg",
     rating: 5,
-    text: "We had both a fence and a deck done by Can Do this summer and couldn't be happier. The deck turned out beautifully — cedar with a black picket rail, exactly what we wanted. The 5-year warranty gave us real peace of mind.",
+    text: "We had both a fence and a deck done by Can Do this summer and couldn't be happier. The deck turned out beautifully - pressure-treated with a black picket rail, exactly what we wanted. The 5-year warranty gave us real peace of mind.",
   },
   {
     name: "David L.",
@@ -31,21 +31,21 @@ const testimonials = [
     role: "Mississauga, ON",
     image: "https://randomuser.me/api/portraits/women/68.jpg",
     rating: 5,
-    text: "Second time using Can Do — first for a fence, now for a pressure treated deck. Both experiences were seamless. They're organized, show up when they say they will, and the quality is consistent. The real deal.",
+    text: "Second time using Can Do - first for a fence, now for a pressure treated deck. Both experiences were seamless. They're organized, show up when they say they will, and the quality is consistent. The real deal.",
   },
   {
     name: "Tony M.",
     role: "Brampton, ON",
     image: "https://randomuser.me/api/portraits/men/76.jpg",
     rating: 5,
-    text: "Had Can Do install a cedar board-on-board privacy fence along our entire backyard. Looks absolutely stunning. The team was knowledgeable, worked fast, and cleaned up everything after. Neighbors keep asking who did it!",
+    text: "Had Can Do install a pressure-treated board-on-board privacy fence along our entire backyard. Looks absolutely stunning. The team was knowledgeable, worked fast, and cleaned up everything after. Neighbors keep asking who did it!",
   },
   {
     name: "Lisa & Rob F.",
     role: "Scarborough, ON",
     image: "https://randomuser.me/api/portraits/women/21.jpg",
     rating: 5,
-    text: "We replaced our old rotting fence with a new cedar privacy fence. Can Do handled everything from permits to cleanup. Priced fairly and the workmanship is excellent. Very happy we chose them.",
+    text: "We replaced our old rotting fence with a brand new pressure-treated privacy fence. Can Do handled everything from permits to cleanup. Priced fairly and the workmanship is excellent. Very happy we chose them.",
   },
   {
     name: "Ahmed K.",

@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { AnimatedButton } from "@/components/ui/animated-button";
 
 export default function ServiceAreaSection() {
   return (
@@ -39,7 +38,7 @@ export default function ServiceAreaSection() {
             className="text-gray-500 max-w-xl mx-auto"
             style={{ fontSize: "1.0625rem", lineHeight: 1.7 }}
           >
-            From Toronto to Barrie, Burlington to Oshawa — our crews cover the
+            From Toronto to Barrie, Burlington to Oshawa - our crews cover the
             entire GTA and surrounding regions.
           </p>
         </motion.div>
@@ -50,11 +49,10 @@ export default function ServiceAreaSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
-          className="mb-10"
         >
           <Image
-            src="/map-gta.png"
-            alt="Can Do Fence & Deck Service Area — Greater Toronto Area"
+            src="/map.jpg"
+            alt="Can Do Fence & Deck Service Area - Greater Toronto Area"
             width={1600}
             height={1200}
             sizes="(max-width: 1280px) 100vw, 1280px"
@@ -62,13 +60,6 @@ export default function ServiceAreaSection() {
             priority
           />
         </motion.div>
-
-        {/* CTA */}
-        <div className="text-center">
-          <AnimatedButton href="/#quote" variant="primary">
-            Request a Quote in Your Area
-          </AnimatedButton>
-        </div>
       </div>
     </section>
   );

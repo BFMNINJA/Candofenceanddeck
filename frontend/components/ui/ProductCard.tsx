@@ -18,7 +18,7 @@ export default function ProductCard({
   product: Product;
   detailHref?: string;
 }) {
-  const href = detailHref ?? "/#quote";
+  const href = detailHref ?? "/contact";
 
   return (
     <Link

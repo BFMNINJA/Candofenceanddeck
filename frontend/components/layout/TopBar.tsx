@@ -31,11 +31,11 @@ export default function TopBar() {
             <span className="sm:hidden text-xs">Call Us</span>
           </a>
           <a
-            href="mailto:alon@candofence.com"
+            href="mailto:sales@candofence.com"
             className="flex items-center gap-1.5 hover:text-white/80 transition-colors duration-200"
           >
             <Mail size={13} />
-            <span className="hidden sm:inline">alon@candofence.com</span>
+            <span className="hidden sm:inline">sales@candofence.com</span>
             <span className="sm:hidden text-xs">Email</span>
           </a>
         </div>
